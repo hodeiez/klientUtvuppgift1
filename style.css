@@ -1,0 +1,10 @@
+.responsiveImg{
+height:auto;
+width: 30%;
+padding: 10px;
+margin:auto;
+display:block;
+}
+body {
+background-color:rgb(123, 137, 179);
+}

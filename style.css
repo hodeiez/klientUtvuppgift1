@@ -8,3 +8,9 @@ display:block;
 body {
 background-color:rgb(123, 137, 179);
 }
+.myFormattedList li{
+    background-color:grey;
+     width:20%;
+     color:white;
+     list-style-type: none;
+}

@@ -32,16 +32,18 @@ color:white;
   padding-top: 10%;
   font-style: normal;
   padding-bottom:10%;
+  padding-left: 0;
+  padding-right: 0;
 }
 .myFormattedList img{
   width: 80%;
 }
 .collapsable{
   padding: 0 18px;
-  border-color:red;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+
 }
 .showcontent{
   overflow:visible;
@@ -133,6 +135,9 @@ color:white;
   .mapFrame{
     margin-top:10%;
     margin-bottom: 10%;
+  }
+  footer {
+    font-size:90%;
   }
 
 

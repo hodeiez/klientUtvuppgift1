@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color"content="#4B0082">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -22,7 +23,7 @@
       <li>
         <a class="accordion" href="#">MyPuzzle15</a>
         <div class="collapsable">
-            <p>Lorem ipsum
+            <p>A 15 puzzle experimental version wrote in Java for a school task. 
             </p>
           <img src="images/puzzle15.png" alt="puzzle15" />
         </div>
@@ -57,15 +58,18 @@
       });
       var acc = document.getElementsByClassName("accordion");
       var i;
-
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
           this.classList.toggle("collapsable");
           var panel = this.nextElementSibling;
+          
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
+            
           } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
+            
+            
           }
         });
       }

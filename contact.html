@@ -10,15 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Contact</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html">About me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a class="active" href="#">Contact</a>
-      </nav>
     </header>
     <content>
       <div class="mapFrame">
@@ -41,5 +37,10 @@
       </div>
     </content>
     <footer>Copyright &copy; 2021 Hodei Eceiza Zaldua</footer>
+    <script>
+      $(function () {
+        $("header").load("menu.html");
+      });
+    </script>
   </body>
 </html>

@@ -13,16 +13,38 @@ body {
   margin:auto;
 }
 .myFormattedList li {
-  background-color: grey;
-  color: white;
+  background-color: indigo;
   list-style-type: none;
   text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  
+}
+.myFormattedList li a {
+font-style: normal;
+text-decoration: none;
+color:white;
+  
 }
 .myFormattedList {
   text-align: center;
-  width: 30%;
+  width: 80%;
   margin: auto;
   padding-top: 10%;
+  font-style: normal;
+  padding-bottom:10%;
+}
+.myFormattedList img{
+  width: 80%;
+}
+.collapsable{
+  padding: 0 18px;
+  border-color:red;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.showcontent{
+  overflow:visible;
 }
 nav a.active {
   background-color: rgb(123, 137, 179);
@@ -68,6 +90,12 @@ footer {
   background-color: indigo;
   color: white;
 }
+footer a{
+  color:white;
+}
+footer a:hover{
+ color:rgb(186, 120, 233);
+}
 section {
   border-radius: 10px;
   background: rgb(149, 162, 201);
@@ -85,7 +113,8 @@ section p {
   padding-right: 5%;
 }
 .mapFrame{
- margin-top:5%;
+margin-top:5%;
+margin-bottom:5%;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
   background-color:indigo;
   text-align: center;
@@ -96,4 +125,15 @@ section p {
 }
 p{
 color:white;
+}
+@media only screen and (max-width: 768px){
+  nav a {
+    font-size:100%;
+  }
+  .mapFrame{
+    margin-top:10%;
+    margin-bottom: 10%;
+  }
+
+
 }

@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Home</title>
     
 </head>
 
 <body>
     <header>
-        <nav>
-            <a class="active" href="#">About me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
     </header>
     <h1 style="text-align:center">HODEI ECEIZA ZALDUA</h1>
     <img class="responsiveImg" src="images/me.png" alt="Hodei">
@@ -33,5 +29,10 @@
           andis me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsum officia neque earum veritatis? Velit corrupti assumenda aut quam nemo, rerum consequatur odio quod facere odit nobis accusantium ducimus praesentium?</p>
 </section>
     <footer>Copyright &copy; 2021 Hodei Eceiza Zaldua</footer>
+    <script>
+        $(function () {
+          $("header").load("menu.html");
+        });
+      </script>
 </body>
 </html>

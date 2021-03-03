@@ -10,24 +10,65 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-    </header>
-    <ul class="myFormattedList">
-      <li><a>Project1</a></li>
-      <li><a>Project2</a></li>
-      <li><a>Project3</a></li>
+    <header></header>
+    
+    <ul id="accordionList" class="myFormattedList">
+        <h1>Some projects</h1>
+      <li>
+        <a class="accordion" href="#">MyPuzzle15</a>
+        <div class="collapsable">
+            <p>Lorem ipsum
+            </p>
+          <img src="images/puzzle15.png" alt="puzzle15" />
+        </div>
+      </li>
+      <li>
+        <a class="accordion" href="#">SuperBlackJack</a>
+        <div class="collapsable">
+          <img src="images/blackJack.png" alt="blackJack" />
+        </div>
+      </li>
+      <li>
+        <a class="accordion" href="#">ShoesShop</a>
+        <div class="collapsable">
+          <img src="images/shoesshop.png" alt="shoesShop" />
+        </div>
+      </li>
+      <li>
+        <a class="accordion" href="#">Personal</a>
+        <div class="collapsable">
+          <img src="images/puzzle15.png" alt="myProjects" />
+        </div>
+      </li>
     </ul>
-    <footer>Copyright &copy; 2021 Hodei Eceiza Zaldua</footer>
+    <footer>
+        <a class="fa fa-linkedin-square"  href="https://www.linkedin.com/in/hodei-eceiza-zaldua-a652771b5/" target="_blank"></a>
+        <a class="fa fa-youtube-square" href="https://www.youtube.com/channel/UCKRlBOX3DvET2S_gdnDCUfg" target="_blank"></a>
+        <a class="fa fa-github-square" href="https://github.com/hodeiez" target="_blank"></a>
+        Copyright &copy; 2021 Hodei Eceiza Zaldua</footer>
     <script>
-        $(function(){
-          $("header").load("menu.html");
-});   
+      $(function () {
+        $("header").load("menu.html");
+      });
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
-        </script>
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("collapsable");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
-  
 </html>
